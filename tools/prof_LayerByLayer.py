@@ -233,7 +233,7 @@ class TimeStampsList:
                                       ('op_name', ''),\
                                       ('pos', '')])
     def initStamps(self):
-        del self.stamps['stamps'][:]
+        self.stamps['stamps'] = []
     def createTimeStamp(self, op):
         self.stamp['time'] = op['beg']
         self.stamp['op_name'] = op['name']
