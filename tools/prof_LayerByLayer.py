@@ -290,12 +290,12 @@ class TimeInfo:
         #    else:
         #        self.timeStampsList.insertWithOp(layer_name, ops)
         self.timeStampsList.createStampsList()
-        # stampsList =  self.timeStampsList.getStampsList()
-        # self.layerExeTimeList.createExeTimeList(stampsList, self.threshold)
+        stampsList =  self.timeStampsList.getStampsList()
+        self.layerExeTimeList.createExeTimeList(stampsList, self.threshold)
 
         self.timeStampsList.printStamps()
         self.timeStampsList.printPeriods()
-        # self.layerExeTimeList.printExeTimes()
+        self.layerExeTimeList.printExeTimes()
         # self.layerExeTimeList.printGapsList()
 
 class LayerExeTimeList:
